@@ -13,11 +13,15 @@ for (const name of files) {
   Posts.push(yaml.load(metadata));
 }
 
+console.log(Posts);
+
 // Sort the posts by their creation date
 Posts = Posts.sort((a, b) => b.date.getTime() - a.date.getTime());
 
 // Sort the posts by their pinned state
 Posts = Posts.sort((a, b) => Number(b.pinned || false) - Number(a.pinned || false));
+
+console.log(Posts);
 
 // Make the posts accessible to other modules
 export default Posts;
