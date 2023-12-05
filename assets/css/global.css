@@ -1,0 +1,70 @@
+@import './fonts.css';
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-l1);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bg-l2);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #080808;
+  --bg-l1: #141414;
+  --bg-l2: #1b1b1b;
+
+  --txt: #fff;
+  --txt-l1: #b6b6b6;
+  --txt-l2: #747474;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--bg);
+  color: var(--txt);
+
+  font-family: 'Lato';
+  color-scheme: dark;
+
+  min-height: 100vh;
+
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txt-l1);
+
+  transition: color 0.25s ease-out;
+}
+
+a:hover {
+  color: var(--txt-l2) !important;
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid var(--bg-l2);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}

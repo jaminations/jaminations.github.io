@@ -1,0 +1,17 @@
+# Remove the '#' to uncomment a line
+
+title: A story
+description: About how I made an example post
+
+# (true/false) whether the post appears at the top of the page (still sorted by date, though)
+# pinned: true
+
+# You can use the same thumbnail for multiple posts; this is just a path to the image
+# You can also exclude this property if you don't want a thumbnail
+# thumbnail: posts/media/thumbnails/example.png
+
+# YYYY/MM/DD HH/MM/SS timezone offset (GMT +2)
+date: 2023-12-04 16:12:00 +2
+
+# The name of the markdown file
+body: new-post

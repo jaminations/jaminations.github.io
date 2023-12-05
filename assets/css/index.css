@@ -1,0 +1,173 @@
+.heading {
+  font-size: 40px;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.heading a {
+  text-decoration: none;
+  color: var(--txt);
+}
+
+#markdown {
+  display: none;
+  background-color: var(--bg);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 1000px;
+  width: 100%;
+}
+
+#markdown h1,
+#markdown h2,
+#markdown h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#markdown p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#markdown video,
+#markdown img {
+  max-width: max-content;
+  width: 100%;
+}
+
+#markdown.viewing {
+  display: block;
+}
+
+#post-template {
+  display: none;
+}
+
+#posts {
+  width: 100%;
+  height: 100%;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  gap: 12px;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#posts * {
+  margin: 0;
+}
+
+#posts.viewing {
+  display: none;
+}
+
+#posts .post {
+  position: relative;
+  border-radius: 12px;
+
+  width: 100%;
+  max-width: 600px;
+}
+
+#posts .post:has(.image) {
+  height: 150px;
+}
+
+#posts .post:hover {
+  cursor: pointer;
+
+  .card {
+    background-color: var(--bg-l2);
+  }
+
+  .image {
+    transform: scale(1.3);
+  }
+}
+
+#posts .card {
+  position: inherit;
+  height: 100%;
+  border-radius: 12px;
+
+  background-color: var(--bg-l1);
+  transition: background 0.25s ease-out;
+}
+
+#posts .post-details {
+  height: 100%;
+
+  position: inherit;
+  z-index: 50;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px;
+}
+
+#posts .title,
+#posts .description {
+  margin-bottom: 6px;
+}
+
+#posts .timestamp {
+  color: var(--txt-l2);
+  font-style: italic;
+
+  margin-top: auto;
+}
+
+#posts .thumbnail {
+  position: absolute;
+  overflow: hidden;
+
+  top: 0;
+  left: 0;
+
+  border-radius: 12px 12px 16px 16px;
+
+  width: 100%;
+  height: 100%;
+}
+
+#posts .thumbnail .image {
+  position: absolute;
+  object-fit: cover;
+
+  z-index: 10;
+
+  top: 0;
+  left: 0;
+
+  max-height: 250px;
+
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#posts .gradient {
+  position: absolute;
+  z-index: 20;
+
+  top: 0;
+  left: 0;
+
+  border-radius: 12px;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
