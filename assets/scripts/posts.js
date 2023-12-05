@@ -3,8 +3,6 @@ import { marked } from '../../packages/marked.min.js';
 import Posts from './post-metadata.js';
 import FetchText from './lib/fetch-text.js';
 
-console.log(Posts, true);
-
 const list = document.getElementById('posts');
 const markdown = document.getElementById('markdown');
 const template = document.getElementById('post-template');
@@ -64,7 +62,6 @@ window.addEventListener('hashchange', OnUpdate);
 
 // Add every post to the list
 for (const [id, post] of Posts.entries()) {
-  console.log(id, post);
   const entry = template.cloneNode(true);
   entry.removeAttribute('id');
 
