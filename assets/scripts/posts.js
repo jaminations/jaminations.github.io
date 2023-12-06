@@ -48,7 +48,7 @@ const OnUpdate = () => {
   const post = Posts.find((p) => ToSlug(p.title) == index);
 
   if (post) {
-    LoadPost(index, post);
+    LoadPost(post);
   } else {
     markdown.classList.remove('viewing');
     list.classList.remove('viewing');
