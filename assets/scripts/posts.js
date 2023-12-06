@@ -6,6 +6,7 @@ import FetchText from './lib/fetch-text.js';
 const list = document.getElementById('posts');
 const markdown = document.getElementById('markdown');
 const template = document.getElementById('post-template');
+const heading = document.getElementById('heading');
 
 const TITLE = "Jam's Portfolio";
 
@@ -21,7 +22,7 @@ const ToSlug = (str) => {
 };
 
 // Fetches or loads the post from cache
-const LoadPost = async (id, post) => {
+const LoadPost = async (post) => {
   let content = PostCache[post.body];
 
   window.history.pushState({}, '', `#${ToSlug(post.title)}`);
@@ -60,6 +61,12 @@ OnUpdate();
 // Update on URL change
 window.addEventListener('hashchange', OnUpdate);
 
+// Reset the URL when the header is clicked
+heading.addEventListener('click', () => {
+  window.history.pushState({}, '', '');
+  document.title = TITLE;
+});
+
 // Add every post to the list
 for (const [id, post] of Posts.entries()) {
   const entry = template.cloneNode(true);
@@ -91,7 +98,7 @@ for (const [id, post] of Posts.entries()) {
   });
 
   // Load the post on click
-  entry.addEventListener('click', () => LoadPost(id, post));
+  entry.addEventListener('click', () => LoadPost(post));
 
   // Add entry to the post
   list.appendChild(entry);
