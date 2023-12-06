@@ -36,7 +36,10 @@
 #markdown video,
 #markdown img {
   max-width: max-content;
+  object-fit: cover;
+
   width: 100%;
+  border-radius: 12px;
 }
 
 #markdown.viewing {
