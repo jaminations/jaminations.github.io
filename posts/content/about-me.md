@@ -16,4 +16,4 @@ Regarding my animations, I would consider them fairly high quality. There's alwa
 
 I believe that's all you should know about me. My commissions are always open and I'm eager to work with you. 
 
-![](https://github.com/jaminations/jaminations.github.io/blob/main/cover3.jpg?raw=true)
+![](/posts/media/cover3.jpg)

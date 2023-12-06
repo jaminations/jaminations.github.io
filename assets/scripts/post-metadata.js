@@ -5,10 +5,16 @@ import FetchText from './lib/fetch-text.js';
 const all = await FetchText('posts/media/generated/all-posts');
 const files = all.split('\n').filter((file) => file.endsWith('.yml'));
 
+const unlisted = /unlisted\..+\.yml/;
+
 // Fetch all post metadata
 let Posts = [];
 
 for (const name of files) {
+  if (unlisted.test(name)) {
+    continue;
+  }
+
   const metadata = await FetchText(`posts/${name}`);
   Posts.push(yaml.load(metadata));
 }
