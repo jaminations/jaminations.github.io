@@ -9,3 +9,5 @@ I'm very driven and never give up on tasks. If I'm given a task, I must finish i
 Regarding my animations, I would consider them fairly high quality. There's always a high amount of effort put in making these - Afterall, it is my job and my passion. As stated before, I'm efficient. One time I even managed to deliver more than 12 fairly detailed animations in one day. I'm also quite **versatile**. I can animate custom rigs, R15 and R6 as well as weapons.
 
 I believe that's all you should know about me. My commissions are always open and I'm eager to work with you. 
+
+ (https://i.kym-cdn.com/entries/icons/original/000/037/126/cover3.jpg)
