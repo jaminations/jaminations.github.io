@@ -10,4 +10,3 @@ Regarding my animations, I would consider them fairly high quality. There's alwa
 
 I believe that's all you should know about me. My commissions are always open and I'm eager to work with you. 
 
- (https://i.kym-cdn.com/entries/icons/original/000/037/126/cover3.jpg)
