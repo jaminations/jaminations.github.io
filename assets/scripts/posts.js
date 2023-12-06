@@ -6,7 +6,6 @@ import FetchText from './lib/fetch-text.js';
 const list = document.getElementById('posts');
 const markdown = document.getElementById('markdown');
 const template = document.getElementById('post-template');
-const heading = document.getElementById('heading');
 
 const TITLE = "Jam's Portfolio";
 
