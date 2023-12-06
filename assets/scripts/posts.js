@@ -52,6 +52,8 @@ const OnUpdate = () => {
   } else {
     markdown.classList.remove('viewing');
     list.classList.remove('viewing');
+
+    document.title = TITLE;
   }
 };
 
@@ -60,12 +62,6 @@ OnUpdate();
 
 // Update on URL change
 window.addEventListener('hashchange', OnUpdate);
-
-// Reset the URL when the header is clicked
-heading.addEventListener('click', () => {
-  window.history.pushState({}, '', '');
-  document.title = TITLE;
-});
 
 // Add every post to the list
 for (const [id, post] of Posts.entries()) {
