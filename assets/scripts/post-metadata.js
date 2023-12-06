@@ -3,7 +3,7 @@ import FetchText from './lib/fetch-text.js';
 
 // Fetch all file names and only include metadata files
 const all = await FetchText('posts/media/generated/all-posts');
-const files = all.split('\n').filter((file) => file.endsWith('.yml'));
+const files = all.split(/\n|\r/).filter((file) => file.endsWith('.yml'));
 
 const unlisted = /unlisted\..+\.yml/;
 
