@@ -16,4 +16,10 @@ I'm efficient. One time I even managed to deliver more than 12 fairly detailed a
 
 I believe that's all you should know about me. My commissions are always open and I'm eager to work with you. 
 
+# Contact me
+
+Discord: jam_jam3
+
+Roblox: GloryToJam
+
 ![](/posts/media/cover3.jpg)
